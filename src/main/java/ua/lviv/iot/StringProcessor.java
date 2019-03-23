@@ -14,7 +14,7 @@ public class StringProcessor {
         return br.readLine();
     }
 
-    public static void main(String ... args) {
+    public static void main(String... args) {
 
         try {
             String input = StringProcessor.readInputText();

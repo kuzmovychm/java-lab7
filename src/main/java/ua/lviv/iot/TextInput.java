@@ -11,8 +11,8 @@ public class TextInput {
     private Set<String> emailSet;
     private Set<String> domainSet;
 
-    public static String emailPattern = "[a-zA-Z0-9-._]{6,30}@[a-zA-Z]+\\.+[a-zA-Z]{2,6}";
-    public static String domainPattern = "@[a-zA-Z]+\\.+[a-zA-Z]{2,6}";
+    private static String emailPattern = "[a-zA-Z0-9-._]{6,30}@[a-zA-Z]+\\.+[a-zA-Z]{2,6}";
+    private static String domainPattern = "@[a-zA-Z]+\\.+[a-zA-Z]{2,6}";
 
     public TextInput(String input) throws NullPointerException {
         if (input != null) {
@@ -24,11 +24,9 @@ public class TextInput {
         }
     }
 
-
     public Set<String> getDomainSet() {
         return domainSet;
     }
-
 
     public void findEmail() {
 
